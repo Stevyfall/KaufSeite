@@ -1,0 +1,33 @@
+<div class="container">
+    <div id="alertMsg">
+  <p>{{message}}</p>
+    </div>
+   <div id="home" class="container">
+    <app-nav-bar
+    *ngFor="let element of Liste"
+    [idd]="element.idd"
+     [titreArticle]="element.titreArticle"
+     [preis]="element.preis" 
+     [Beschreibung]="element.Beschreibung"
+      [urlImg]="element.urlImg"
+       [textAltImg]="element.textAltImg" 
+       [dispo]="element.dispo" 
+       (info)="PopUp($event)">
+    </app-nav-bar>
+    <!--
+    <app-nav-bar [titreArticle]="'Fahrrad'" [preis]="preis1" 
+    [Beschreibung]="'Schönes Kindfahrrad'" [urlImg]="'../assets/Fahrrad.jpg'" 
+    [textAltImg]="'Ein Fahrrad'" [dispo]="false" (info)="PopUp($event)">
+    </app-nav-bar>
+    <app-nav-bar [titreArticle]="'TV'" [preis]="preis2" 
+    [Beschreibung]="'Schöner Fernseher'" [urlImg]="'../assets/Fernseher.jpeg'" 
+    [textAltImg]="'Ein Fernseher'" [dispo]="true"  (info)="PopUp($event)" >
+    </app-nav-bar>
+    <app-nav-bar [titreArticle]="'Spielzeug'" [preis]="preis3" 
+    [Beschreibung]="'Schönes Spielzeug'" [urlImg]="'../assets/Spielzeug.jpg'" [
+    textAltImg]="'Ein Spielzeug'" [dispo]="true"  (info)="PopUp($event)">
+    </app-nav-bar>
+    !-->
+    </div>
+  </div>
+  

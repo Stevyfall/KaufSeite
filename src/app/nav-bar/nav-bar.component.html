@@ -1,0 +1,16 @@
+<div class="card articleInfo">
+    <img [src]="urlImg" [alt]="textAltImg">
+    <div class="card-body">
+        <h5 class="card-title">{{titreArticle}}
+            <span *ngIf="dispo===false">- Indisponible</span>
+        </h5>
+        <h6 class="card-title">{{preis}} $</h6>
+        <p class="card-text">Beschreibung</p>
+        <a routerLink="/details/{{ idd}}"> Artikel {{idd}} ansehen</a>
+        <hr>
+        <button class="btn btn-primary" (click)="onLike()"
+       >Like</button>
+        
+        <p>Total Likes: {{nbrLikes}}</p>
+    </div>
+</div>
